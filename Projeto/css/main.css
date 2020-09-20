@@ -1,0 +1,116 @@
+/* Topo da pagina */
+#top{
+    position: relative;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    text-decoration: none;
+}
+
+/* Titulo do site */
+#nome a {
+    margin: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+/* hover na lista */
+#nome a:hover {
+    margin: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Botão de busca */
+#busca {
+    margin: 20px;
+    margin-left: auto;
+}
+
+/* lista */
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color: #EDEDED;
+    list-style: none;
+}
+
+/* Alinhamento da lista em linha */
+#menu ul li { 
+    display: inline;
+}
+
+/* Botoes da lista */
+#menu ul li a {
+    padding: 5px 50px;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+
+/* Efeito hover nos botoes da lista */
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid gray;
+}
+
+/* Alinhamento  slides*/
+.conteudo{
+    position: relative;
+    margin: auto;
+}
+
+/* Tamanho da Visualização dos slides */
+.slides{
+    width: 100%;
+    display: none;
+}
+
+/* Estilo dos botões dos slides */
+.botaoD, .botaoE{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Posição do botão da direita */
+.botaoD{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Efeito mudança de cor ao clicar */
+.botaoD:hover, .botaoE:hover{
+    color:#fff;
+    background-color:#000;
+}
+
+/* Animação Fading */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

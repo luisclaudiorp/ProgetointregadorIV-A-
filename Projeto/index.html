@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <head>
+        <title>Projeto</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css\main.css">
+    </head>
+    <body>
+        <header id="top">
+                        <!-- Nome da Pagina -->
+            <h1 id="nome"><a href="#">Game Mania</a></h1>
+            <div id="busca">
+                <form action="" method="GET">
+                        <!-- Botao de pesquisa -->
+                    <input type="text" name=" texto" placeholder="Busca">
+                    <button type="submit" >...</button>
+                </form>
+            </div>
+        </header> 
+                        <!-- Menu de lista    -->
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Tutoriais</a></li>
+                    <li><a href="#">Especias</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </nav>
+                        <!-- Slide Show -->
+            <div class="conteudo">
+                <img class="slides fade" src="img/img1.jpg">
+                <img class="slides fade" src="img/img2.jpg">
+                <img class="slides fade" src="img/img3.jpg"> 
+
+                        <!--Botoes de troca slide  -->
+                <button class="botaoE" onclick="trocaDiv(-1)">&#10094;</button>
+                <button class="botaoD" onclick="trocaDiv(1)">&#10095;</button>
+              </div>
+            <footer>
+                              
+            </footer>
+            <script type="text/javascript" src="./js/main.js"></script>
+    </body>
+</html>
