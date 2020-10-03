@@ -1,44 +1,118 @@
 <!DOCTYPE html>
-    <head>
-        <title>Projeto</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css\main.css">
-    </head>
-    <body>
-        <header id="top">
-                        <!-- Nome da Pagina -->
-            <h1 id="nome"><a href="#">Game Mania</a></h1>
-            <div id="busca">
-                <form action="" method="GET">
-                        <!-- Botao de pesquisa -->
-                    <input type="text" name=" texto" placeholder="Busca">
-                    <button type="submit" >...</button>
-                </form>
-            </div>
-        </header> 
-                        <!-- Menu de lista    -->
-            <nav id="menu">
-                <ul>
-                    <li><a href="#">Home</a> </li>
-                    <li><a href="#">Tutoriais</a></li>
-                    <li><a href="#">Especias</a></li>
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Reviews</a></li>
-                </ul>
-            </nav>
-                        <!-- Slide Show -->
-            <div class="conteudo">
-                <img class="slides fade" src="img/img1.jpg">
-                <img class="slides fade" src="img/img2.jpg">
-                <img class="slides fade" src="img/img3.jpg"> 
 
-                        <!--Botoes de troca slide  -->
-                <button class="botaoE" onclick="trocaDiv(-1)">&#10094;</button>
-                <button class="botaoD" onclick="trocaDiv(1)">&#10095;</button>
-              </div>
-            <footer>
-                              
-            </footer>
-            <script type="text/javascript" src="./js/main.js"></script>
-    </body>
+<head>
+    <title>Projeto</title>
+    <meta charset="utf-8">
+    <!-- Inserção do arquivo CSS externo -->
+    <link rel="stylesheet" type="text/css" href="css\main.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header id="top">
+        <!-- Nome da Pagina -->
+        <h1 id="nome"><a href="#">PROJECT GAMES</a></h1>
+        <!-- Botao Pesquisar -->
+        <div id="busca">
+            <input type="text" name=" texto" placeholder="Busca">
+            <button type="submit"><img class="btnir" src="img/ir.png" alt="botao"></button>
+        </div>
+    </header>
+    <!-- Menu de lista    -->
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">Tutoriais</a></li>
+            <li><a href="#">Especiais</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Reviews</a></li>
+        </ul>
+    </nav>
+    <!-- Slide Show -->
+    <div class="conteudo">
+        <img class="slides fade" src="img/img1.jpg">
+        <img class="slides fade" src="img/img2.jpg">
+        <img class="slides fade" src="img/img3.jpg">
+        <!--Botoes de troca slide  -->
+        <button class="botaoE" onclick="trocaDiv(-1)">&#10094;</button>
+        <button class="botaoD" onclick="trocaDiv(1)">&#10095;</button>
+    </div>
+    <!-- Blocos de Conteudo -->
+    <div class="cont">
+        <div class="bloco">
+            <img class="img" src="img/cont1.jpg">
+            <h3><a href="#">Assassins Creed Valhalla</a></h3>
+            <p>Torne-se Eivor, um invasor Viking poderoso, e leve seu clã das adversas costas da Noruega para um novo
+                lar em meio às exuberantes terras agrícolas da Inglaterra do século IX.</p>
+        </div>
+        <div class="bloco">
+            <img class="img" src="img/cont2.png">
+            <h3><a href="#">No Man's Skys Origens</a></h3>
+            <p>Nova atualização de No Man's Sky dobra variedade de planetas do jogo. Atualização gratuita, Origins
+                promete trazer paisagens "jamais vistas" para o título.</p>
+        </div>
+        <div class="bloco">
+            <img class="img" src="img/cont3.jpg">
+            <h3><a href="#">Witcher 3 Wild Hunt</a></h3>
+            <p>Após cinco anos, qual o impacto de The Witcher 3 nos games? Jogo da CD Projekt Red é exemplo de como
+                amarrar boa narrativa a um jogo de mundo aberto.</p>
+        </div>
+        <div class="bloco">
+            <img class="img" src="img/cont4.jpg">
+            <h3><a href="#">The Last of Us 2</a></h3>
+            <p>Ambientado cinco anos após os eventos de The Last of Us (2013), o jogador assume o papel de duas
+                protagonistas em um Estados Unidos pós-apocalíptico: Ellie, que busca por vingança após um evento
+                traumático, e Abby, uma soldada que se envolve em um conflito entre uma milícia e um culto.</p>
+        </div>
+    </div>
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <div class="superior">
+                <!-- Conteudo mais visto -->
+                <div class="itens">
+                    <h3><b>Conteudos mais vistos</b></h3>
+                    <p>Ultimos lançamentos</p>
+                    <p> <b>Data:</b> 29 de setembro de 2020</p>
+                    <p>Detonados</p>
+                    <p> <b>Data:</b> 29 de setembro de 2020</p>
+                </div>
+                <!-- Principais Tags -->
+                <div class="itens">
+                    <h3><b>Principais tags</b></h3>
+                    <p>Jogos, RPG, Luta, MMO, Analises, Lançamentos, Multiplayer, Top10</p>
+                </div>
+                <div class="itens">
+                    <h3><b>Este site foi fundado em 2020 e tem como objetivo mostrar noticias,
+                            entretenimento e varios tipos de informaçoes sobre jogos.
+                        </b></h3>
+                </div>
+                <!-- Contatos -->
+                <div class="itens">
+                    <h3><b>Contato</b></h3>
+                    <p><b>E-mail:</b>email@email.com.br</p>
+                    <p> <b>Telefone</b> 53 998877665</p>
+                </div>
+            </div>
+            <div class="inferior">
+                <!-- Direitos autorais -->
+                <div>
+                    <p>@ 2020 - Todos os direitos reservados</p>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="redesociais">
+                    <ul>
+                        <li><a href=""><img class="imgsocial" src="img/face.png" alt="Facebook"></a></li>
+                        <li><a href=""><img class="imgsocial" src="img/insta.png" alt="Instagram"></a></li>
+                        <li><a href=""><img class="imgsocial" src="img/link.jpg" alt="Linkdin"></a></li>
+                        <li><a href=""><img class="imgsocial" src="img/twit.png" alt="Twiter"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+    </footer>
+    <!-- Inserção do Java Script externo -->
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
 </html>
