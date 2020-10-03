@@ -1,33 +1,33 @@
 /* Topo da pagina */
 #top{
     position: relative;
-    background-color: gray;
+    background-color:#333;
     display: flex;
     align-items: center;
     height: 100px;
     text-decoration: none;
 }
-
 /* Titulo do site */
 #nome a {
     margin: 50px;
     color: black;
     text-decoration: none;
 }
-
-/* hover na lista */
+/* hover no titulo do site */
 #nome a:hover {
     margin: 50px;
     color: white;
     text-decoration: none;
 }
-
 /* Botão de busca */
 #busca {
     margin: 20px;
     margin-left: auto;
 }
-
+.btnir{
+    width: 12px;
+    height: 12px;
+}
 /* lista */
 #menu ul {
     padding:0px;
@@ -35,12 +35,10 @@
     background-color: #EDEDED;
     list-style: none;
 }
-
 /* Alinhamento da lista em linha */
 #menu ul li { 
     display: inline;
 }
-
 /* Botoes da lista */
 #menu ul li a {
     padding: 5px 50px;
@@ -49,26 +47,22 @@
     text-decoration: none;
     border-bottom:3px solid #EDEDED;
 }
-
 /* Efeito hover nos botoes da lista */
 #menu ul li a:hover {
     background-color:#D6D6D6;
     color: #6D6D6D;
     border-bottom:3px solid gray;
 }
-
 /* Alinhamento  slides*/
 .conteudo{
     position: relative;
     margin: auto;
 }
-
 /* Tamanho da Visualização dos slides */
 .slides{
     width: 100%;
     display: none;
 }
-
 /* Estilo dos botões dos slides */
 .botaoD, .botaoE{
     cursor: pointer;
@@ -84,19 +78,16 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
 /* Posição do botão da direita */
 .botaoD{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
 /* Efeito mudança de cor ao clicar */
 .botaoD:hover, .botaoE:hover{
     color:#fff;
     background-color:#000;
 }
-
 /* Animação Fading */
 .fade {
     -webkit-animation-name: fade;
@@ -104,13 +95,83 @@
     animation-name: fade;
     animation-duration: 1.5s;
 }
-  
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
-  
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+/* Div do bloco de conteudo */
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:#333;
+}
+/* Cada bloco de conteudo */
+.bloco{ 
+    background-color:gray;
+    border-style: solid;
+    width: 25%;
+    padding: 5px 5px;
+    margin: 10px;
+}
+/* As imagens dentro do bloco de conteudo */
+.img{
+    margin: 0 auto;
+    width: 100%;
+    height: 35%;
+}
+/* Titulo das Materias do bloco de conteudo */
+h3 a{
+    color: black;
+    text-align: justify;
+    text-decoration: none;
+    margin: 20px;
+}
+/* Efeito hover no link do titulo das materias do bloco de conteudo*/
+h3 a:hover{
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+    margin: 20px;
+}
+/* Div do rodapé */
+.footer{
+    width: 100%;
+    background-color: #EDEDED;
+}
+/* Div dos itens parte superior do rodape */
+.superior{
+    display: flex;
+    padding: 5px 5px;
+    margin: 10px;
+}
+/* Estilo dos itens */
+.itens{
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 10px;
+}
+/* Div das informaçoes autorais e redes sociais */
+.inferior{
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Remover estilo da lista usada para as redes sociais */
+.redesociais ul{
+    list-style: none;
+}
+/* Mostrar itens da lista em linha */
+.redesociais ul li{
+    display: inline;
+}
+/* Tamanho das imagens das fotos das redes socais */
+.imgsocial{
+    width: 30px;
+    height: 30px;
 }
